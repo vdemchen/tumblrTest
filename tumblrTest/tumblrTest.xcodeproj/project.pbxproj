@@ -10,6 +10,15 @@
 		2428CED82248FDFD0092178F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CED72248FDFD0092178F /* AppDelegate.swift */; };
 		2428CEDF2248FDFE0092178F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2428CEDE2248FDFE0092178F /* Assets.xcassets */; };
 		2428CEE22248FDFE0092178F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2428CEE02248FDFE0092178F /* LaunchScreen.storyboard */; };
+		2428CEFC224900B70092178F /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CEF4224900B60092178F /* UIAlertControllerExtension.swift */; };
+		2428CEFF224900B70092178F /* NSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CEF7224900B60092178F /* NSErrorExtension.swift */; };
+		2428CF07224901D20092178F /* BaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2428CF04224901D10092178F /* BaseTableViewCell.xib */; };
+		2428CF08224901D20092178F /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF05224901D10092178F /* BaseTableViewCell.swift */; };
+		2428CF09224901D20092178F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF06224901D20092178F /* BaseViewController.swift */; };
+		2428CF0B224902120092178F /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF0A224902120092178F /* NSObjectExtension.swift */; };
+		2428CF10224902E10092178F /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF0F224902E10092178F /* Keys.swift */; };
+		2428CF132249030A0092178F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF122249030A0092178F /* Models.swift */; };
+		B4C8162D37471854FF6A6C30 /* Pods_tumblrTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A008757AC1064E72790B921B /* Pods_tumblrTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +27,17 @@
 		2428CEDE2248FDFE0092178F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2428CEE12248FDFE0092178F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2428CEE32248FDFE0092178F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2428CEF4224900B60092178F /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		2428CEF7224900B60092178F /* NSErrorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSErrorExtension.swift; sourceTree = "<group>"; };
+		2428CF04224901D10092178F /* BaseTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseTableViewCell.xib; sourceTree = "<group>"; };
+		2428CF05224901D10092178F /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		2428CF06224901D20092178F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2428CF0A224902120092178F /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		2428CF0F224902E10092178F /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		2428CF122249030A0092178F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		7AF80CDE23E002630CB4F6F0 /* Pods-tumblrTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tumblrTest.debug.xcconfig"; path = "Target Support Files/Pods-tumblrTest/Pods-tumblrTest.debug.xcconfig"; sourceTree = "<group>"; };
+		A008757AC1064E72790B921B /* Pods_tumblrTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tumblrTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94EF38A6E7EADC2CA653C4E /* Pods-tumblrTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tumblrTest.release.xcconfig"; path = "Target Support Files/Pods-tumblrTest/Pods-tumblrTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C8162D37471854FF6A6C30 /* Pods_tumblrTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +57,8 @@
 			children = (
 				2428CED62248FDFD0092178F /* tumblrTest */,
 				2428CED52248FDFD0092178F /* Products */,
+				2B5258ECA342F64F0D31ED49 /* Pods */,
+				C5CE459C68889D3DF6C297BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,12 +73,133 @@
 		2428CED62248FDFD0092178F /* tumblrTest */ = {
 			isa = PBXGroup;
 			children = (
-				2428CED72248FDFD0092178F /* AppDelegate.swift */,
-				2428CEDE2248FDFE0092178F /* Assets.xcassets */,
-				2428CEE02248FDFE0092178F /* LaunchScreen.storyboard */,
-				2428CEE32248FDFE0092178F /* Info.plist */,
+				2428CEEB2248FFA30092178F /* resources */,
+				2428CEEA2248FF9C0092178F /* source */,
+				2428CEE92248FF8F0092178F /* project */,
 			);
 			path = tumblrTest;
+			sourceTree = "<group>";
+		};
+		2428CEE92248FF8F0092178F /* project */ = {
+			isa = PBXGroup;
+			children = (
+				2428CEE32248FDFE0092178F /* Info.plist */,
+			);
+			path = project;
+			sourceTree = "<group>";
+		};
+		2428CEEA2248FF9C0092178F /* source */ = {
+			isa = PBXGroup;
+			children = (
+				2428CED72248FDFD0092178F /* AppDelegate.swift */,
+				2428CEEF224900010092178F /* data */,
+				2428CEED2248FFD00092178F /* extension */,
+				2428CEEC2248FFC40092178F /* implementation */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		2428CEEB2248FFA30092178F /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				2428CEE02248FDFE0092178F /* LaunchScreen.storyboard */,
+				2428CEDE2248FDFE0092178F /* Assets.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		2428CEEC2248FFC40092178F /* implementation */ = {
+			isa = PBXGroup;
+			children = (
+				2428CEF1224900130092178F /* base_elements */,
+				2428CEF0224900090092178F /* controllers */,
+			);
+			path = implementation;
+			sourceTree = "<group>";
+		};
+		2428CEED2248FFD00092178F /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				2428CEF7224900B60092178F /* NSErrorExtension.swift */,
+				2428CEF4224900B60092178F /* UIAlertControllerExtension.swift */,
+				2428CF0A224902120092178F /* NSObjectExtension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		2428CEEF224900010092178F /* data */ = {
+			isa = PBXGroup;
+			children = (
+				2428CEF3224900690092178F /* models */,
+				2428CEF2224900620092178F /* keys */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		2428CEF0224900090092178F /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2428CF0C224902910092178F /* find_screen */,
+				2428CF0D224902A00092178F /* info_screen */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		2428CEF1224900130092178F /* base_elements */ = {
+			isa = PBXGroup;
+			children = (
+				2428CF05224901D10092178F /* BaseTableViewCell.swift */,
+				2428CF04224901D10092178F /* BaseTableViewCell.xib */,
+				2428CF06224901D20092178F /* BaseViewController.swift */,
+			);
+			path = base_elements;
+			sourceTree = "<group>";
+		};
+		2428CEF2224900620092178F /* keys */ = {
+			isa = PBXGroup;
+			children = (
+				2428CF0F224902E10092178F /* Keys.swift */,
+			);
+			path = keys;
+			sourceTree = "<group>";
+		};
+		2428CEF3224900690092178F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				2428CF122249030A0092178F /* Models.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		2428CF0C224902910092178F /* find_screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = find_screen;
+			sourceTree = "<group>";
+		};
+		2428CF0D224902A00092178F /* info_screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = info_screen;
+			sourceTree = "<group>";
+		};
+		2B5258ECA342F64F0D31ED49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AF80CDE23E002630CB4F6F0 /* Pods-tumblrTest.debug.xcconfig */,
+				F94EF38A6E7EADC2CA653C4E /* Pods-tumblrTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5CE459C68889D3DF6C297BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A008757AC1064E72790B921B /* Pods_tumblrTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2428CEE62248FDFE0092178F /* Build configuration list for PBXNativeTarget "tumblrTest" */;
 			buildPhases = (
+				281FE3E843924EC205C5EE3C /* [CP] Check Pods Manifest.lock */,
 				2428CED02248FDFD0092178F /* Sources */,
 				2428CED12248FDFD0092178F /* Frameworks */,
 				2428CED22248FDFD0092178F /* Resources */,
+				12773C95C2D9F8FCC08435B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -116,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2428CF07224901D20092178F /* BaseTableViewCell.xib in Resources */,
 				2428CEE22248FDFE0092178F /* LaunchScreen.storyboard in Resources */,
 				2428CEDF2248FDFE0092178F /* Assets.xcassets in Resources */,
 			);
@@ -123,11 +270,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12773C95C2D9F8FCC08435B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tumblrTest/Pods-tumblrTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tumblrTest/Pods-tumblrTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		281FE3E843924EC205C5EE3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tumblrTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2428CED02248FDFD0092178F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2428CF09224901D20092178F /* BaseViewController.swift in Sources */,
+				2428CF0B224902120092178F /* NSObjectExtension.swift in Sources */,
+				2428CF08224901D20092178F /* BaseTableViewCell.swift in Sources */,
+				2428CF132249030A0092178F /* Models.swift in Sources */,
+				2428CEFC224900B70092178F /* UIAlertControllerExtension.swift in Sources */,
+				2428CF10224902E10092178F /* Keys.swift in Sources */,
+				2428CEFF224900B70092178F /* NSErrorExtension.swift in Sources */,
 				2428CED82248FDFD0092178F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +465,7 @@
 		};
 		2428CEE72248FDFE0092178F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AF80CDE23E002630CB4F6F0 /* Pods-tumblrTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -282,6 +484,7 @@
 		};
 		2428CEE82248FDFE0092178F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F94EF38A6E7EADC2CA653C4E /* Pods-tumblrTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
