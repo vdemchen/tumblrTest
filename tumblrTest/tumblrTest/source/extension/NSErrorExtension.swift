@@ -2,21 +2,14 @@
 import Foundation
 
 extension NSError {
-    static let errorCodeNoUser = 4004
-    static let errorCodeNoMeeting = 4005
-    static let errorCodeOther = 404
-    
-    class func error(text: String?, code: Int) -> NSError {
-        let description = (text != nil) ? text : ""
-        
-        let nError = NSError.init(domain: "com.meeting.cost.calculator", code: code, userInfo: [ NSLocalizedDescriptionKey : description! ])
-        return nError
-    }
-    
-    class func error(error: Error?, code: Int) -> NSError {
-        let description = (error?.localizedDescription != nil) ? error?.localizedDescription : ""
-        
-        let nError = NSError.init(domain: "com.meeting.cost.calculator", code: code, userInfo: [ NSLocalizedDescriptionKey : description! ])
-        return nError
-    }
+    static let noInternetConnection: NSError = NSError(
+        domain: "No internet connection",
+        code: 1001,
+        userInfo: nil
+    )
+    static let serverError: NSError = NSError(
+        domain: "Server error",
+        code: 1002,
+        userInfo: nil
+    )
 }
