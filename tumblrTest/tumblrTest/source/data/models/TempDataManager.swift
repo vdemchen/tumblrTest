@@ -30,14 +30,14 @@ struct ItemModel {
     let blogName: String
     let blog: ResponseBlog
     let id: Int
-    let photos: [Photo]
+    let photos: [Photo]?
     
     init(
         type: TypeEnum,
         blogName: String,
         blog: ResponseBlog,
         id: Int,
-        photos: [Photo]
+        photos: [Photo]?
         ) {
         self.type = type
         self.blogName = blogName

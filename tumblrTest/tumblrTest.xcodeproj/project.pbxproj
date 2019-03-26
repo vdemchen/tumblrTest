@@ -17,7 +17,6 @@
 		2428CF09224901D20092178F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF06224901D20092178F /* BaseViewController.swift */; };
 		2428CF0B224902120092178F /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF0A224902120092178F /* NSObjectExtension.swift */; };
 		2428CF10224902E10092178F /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF0F224902E10092178F /* Keys.swift */; };
-		2428CF132249030A0092178F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF122249030A0092178F /* Models.swift */; };
 		2428CF18224903BD0092178F /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF17224903BD0092178F /* RequestManager.swift */; };
 		2428CF1A224903CA0092178F /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF19224903CA0092178F /* RequestBuilder.swift */; };
 		2428CF1D224903E00092178F /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF1C224903E00092178F /* RequestHandler.swift */; };
@@ -28,6 +27,13 @@
 		2428CF2B224919070092178F /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF29224919070092178F /* PostTableViewCell.swift */; };
 		2428CF2C224919070092178F /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2428CF2A224919070092178F /* PostTableViewCell.xib */; };
 		2428CF2E22491DC30092178F /* TempDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428CF2D22491DC30092178F /* TempDataManager.swift */; };
+		244C6CC9224A680D008AEB9D /* FindWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C6CC8224A680D008AEB9D /* FindWorker.swift */; };
+		244C6CCE224A6C01008AEB9D /* PopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 244C6CCC224A6C01008AEB9D /* PopupView.xib */; };
+		244C6CCF224A6C01008AEB9D /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C6CCD224A6C01008AEB9D /* PopupView.swift */; };
+		244C6CD1224A8BB9008AEB9D /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C6CD0224A8BB9008AEB9D /* StringExtension.swift */; };
+		244C6CD4224A969E008AEB9D /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C6CD3224A969E008AEB9D /* ImageService.swift */; };
+		244C6CD8224A97F7008AEB9D /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C6CD6224A97F7008AEB9D /* InfoVC.swift */; };
+		244C6CD9224A97F7008AEB9D /* InfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 244C6CD7224A97F7008AEB9D /* InfoVC.xib */; };
 		B4C8162D37471854FF6A6C30 /* Pods_tumblrTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A008757AC1064E72790B921B /* Pods_tumblrTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +50,6 @@
 		2428CF06224901D20092178F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2428CF0A224902120092178F /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		2428CF0F224902E10092178F /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
-		2428CF122249030A0092178F /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		2428CF17224903BD0092178F /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		2428CF19224903CA0092178F /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		2428CF1C224903E00092178F /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
@@ -55,6 +60,13 @@
 		2428CF29224919070092178F /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		2428CF2A224919070092178F /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		2428CF2D22491DC30092178F /* TempDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempDataManager.swift; sourceTree = "<group>"; };
+		244C6CC8224A680D008AEB9D /* FindWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWorker.swift; sourceTree = "<group>"; };
+		244C6CCC224A6C01008AEB9D /* PopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupView.xib; sourceTree = "<group>"; };
+		244C6CCD224A6C01008AEB9D /* PopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		244C6CD0224A8BB9008AEB9D /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		244C6CD3224A969E008AEB9D /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		244C6CD6224A97F7008AEB9D /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		244C6CD7224A97F7008AEB9D /* InfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoVC.xib; sourceTree = "<group>"; };
 		7AF80CDE23E002630CB4F6F0 /* Pods-tumblrTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tumblrTest.debug.xcconfig"; path = "Target Support Files/Pods-tumblrTest/Pods-tumblrTest.debug.xcconfig"; sourceTree = "<group>"; };
 		A008757AC1064E72790B921B /* Pods_tumblrTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tumblrTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94EF38A6E7EADC2CA653C4E /* Pods-tumblrTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tumblrTest.release.xcconfig"; path = "Target Support Files/Pods-tumblrTest/Pods-tumblrTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +143,7 @@
 		2428CEEC2248FFC40092178F /* implementation */ = {
 			isa = PBXGroup;
 			children = (
+				244C6CCA224A6BEE008AEB9D /* custom_elements */,
 				2428CF15224903960092178F /* services */,
 				2428CEF1224900130092178F /* base_elements */,
 				2428CEF0224900090092178F /* controllers */,
@@ -144,6 +157,7 @@
 				2428CEF7224900B60092178F /* NSErrorExtension.swift */,
 				2428CEF4224900B60092178F /* UIAlertControllerExtension.swift */,
 				2428CF0A224902120092178F /* NSObjectExtension.swift */,
+				244C6CD0224A8BB9008AEB9D /* StringExtension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -187,7 +201,6 @@
 		2428CEF3224900690092178F /* models */ = {
 			isa = PBXGroup;
 			children = (
-				2428CF122249030A0092178F /* Models.swift */,
 				2428CF2D22491DC30092178F /* TempDataManager.swift */,
 			);
 			path = models;
@@ -199,6 +212,7 @@
 				2428CF28224918EB0092178F /* cell */,
 				2428CF2422490BAE0092178F /* FindVC.swift */,
 				2428CF2522490BAE0092178F /* FindVC.xib */,
+				244C6CC8224A680D008AEB9D /* FindWorker.swift */,
 			);
 			path = find_screen;
 			sourceTree = "<group>";
@@ -206,6 +220,8 @@
 		2428CF0D224902A00092178F /* info_screen */ = {
 			isa = PBXGroup;
 			children = (
+				244C6CD6224A97F7008AEB9D /* InfoVC.swift */,
+				244C6CD7224A97F7008AEB9D /* InfoVC.xib */,
 			);
 			path = info_screen;
 			sourceTree = "<group>";
@@ -214,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				2428CF16224903A20092178F /* request-manager */,
+				244C6CD3224A969E008AEB9D /* ImageService.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -237,6 +254,23 @@
 				2428CF2A224919070092178F /* PostTableViewCell.xib */,
 			);
 			path = cell;
+			sourceTree = "<group>";
+		};
+		244C6CCA224A6BEE008AEB9D /* custom_elements */ = {
+			isa = PBXGroup;
+			children = (
+				244C6CCB224A6C01008AEB9D /* PopupView */,
+			);
+			path = custom_elements;
+			sourceTree = "<group>";
+		};
+		244C6CCB224A6C01008AEB9D /* PopupView */ = {
+			isa = PBXGroup;
+			children = (
+				244C6CCC224A6C01008AEB9D /* PopupView.xib */,
+				244C6CCD224A6C01008AEB9D /* PopupView.swift */,
+			);
+			path = PopupView;
 			sourceTree = "<group>";
 		};
 		2B5258ECA342F64F0D31ED49 /* Pods */ = {
@@ -290,6 +324,7 @@
 				TargetAttributes = {
 					2428CED32248FDFD0092178F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -319,8 +354,10 @@
 				2428CF07224901D20092178F /* BaseTableViewCell.xib in Resources */,
 				2428CF2C224919070092178F /* PostTableViewCell.xib in Resources */,
 				2428CF2722490BAE0092178F /* FindVC.xib in Resources */,
+				244C6CCE224A6C01008AEB9D /* PopupView.xib in Resources */,
 				2428CEE22248FDFE0092178F /* LaunchScreen.storyboard in Resources */,
 				2428CEDF2248FDFE0092178F /* Assets.xcassets in Resources */,
+				244C6CD9224A97F7008AEB9D /* InfoVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,12 +374,20 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-tumblrTest/Pods-tumblrTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/QuickLayout/QuickLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftEntryKit/SwiftEntryKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QuickLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEntryKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -378,16 +423,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244C6CC9224A680D008AEB9D /* FindWorker.swift in Sources */,
 				2428CF09224901D20092178F /* BaseViewController.swift in Sources */,
 				2428CF2622490BAE0092178F /* FindVC.swift in Sources */,
 				2428CF2B224919070092178F /* PostTableViewCell.swift in Sources */,
+				244C6CD8224A97F7008AEB9D /* InfoVC.swift in Sources */,
 				2428CF0B224902120092178F /* NSObjectExtension.swift in Sources */,
+				244C6CD4224A969E008AEB9D /* ImageService.swift in Sources */,
 				2428CF08224901D20092178F /* BaseTableViewCell.swift in Sources */,
-				2428CF132249030A0092178F /* Models.swift in Sources */,
 				2428CF1D224903E00092178F /* RequestHandler.swift in Sources */,
 				2428CF232249083E0092178F /* RequestModels.swift in Sources */,
+				244C6CCF224A6C01008AEB9D /* PopupView.swift in Sources */,
 				2428CEFC224900B70092178F /* UIAlertControllerExtension.swift in Sources */,
 				2428CF20224903F40092178F /* RequestPath.swift in Sources */,
+				244C6CD1224A8BB9008AEB9D /* StringExtension.swift in Sources */,
 				2428CF1A224903CA0092178F /* RequestBuilder.swift in Sources */,
 				2428CF2E22491DC30092178F /* TempDataManager.swift in Sources */,
 				2428CF10224902E10092178F /* Keys.swift in Sources */,
@@ -541,7 +590,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vdemchen.tumblrTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -560,7 +609,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vdemchen.tumblrTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

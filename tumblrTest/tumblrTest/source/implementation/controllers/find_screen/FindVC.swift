@@ -8,6 +8,8 @@ class FindVC: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     
     private let searchController: UISearchController = UISearchController(searchResultsController: nil)
+    private let worker = FindWorker()
+   
     private var timer: Timer? = nil
 
     
@@ -30,7 +32,7 @@ class FindVC: UIViewController {
         self.setupView()
     }
     
-    //MARK: - Setup View
+    //MARK: - Private methods
     
     private func setupView() {
         self.setupSearchBar()
@@ -63,31 +65,32 @@ class FindVC: UIViewController {
             PostTableViewCell.nib(),
             forCellReuseIdentifier: PostTableViewCell.identifier()
         )
-        self.tableView.separatorStyle = .none
+        self.tableView.separatorStyle = .singleLine
     }
     
-    //MARK: - Private methods
-    
-    private func makeRequest(tag: String) {
-        RequestBuilder.findPost(tag: tag) { (result) in
-            switch result {
-            case .success(let data):
-                TempDataManager.updateItems(data: data.response)
-                self.tableView.reloadData()
-            case .error(let error):
-                self.showErrorAlertWith(message: error?.localizedDescription ?? "")
-            }
+    private func setupCellEvents(completion: @escaping(CellEvents)->()) {
+        let events: CellEvents = CellEvents { [weak self] (feed) in
+            guard let strongSelf = self else { return }
+            let vc = InfoVC()
+            
+            strongSelf.navigationController?.pushViewController(vc, animated: true)
         }
+        completion(events)
     }
-    
-    //MARK: - Public methods
 }
 
 
 extension FindVC: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        TempDataManager.deleteItems()
-        self.makeRequest(tag: searchBar.text ?? "")
+        self.worker.findFeed(tag: searchBar.text ?? "") { (result) in
+            switch result {
+            case .success(_):
+                PopupView().showNotificationMessage(title: "Ready!")
+            case .error:
+                PopupView().showNotificationMessage(title: "Nothing find!", colorView: UIColor.red)
+            }
+            self.tableView.reloadData()
+        }
     }
 }
 
@@ -105,6 +108,9 @@ extension FindVC: UITableViewDataSource {
             withIdentifier: PostTableViewCell.identifier(),
             for: indexPath
             ) as! PostTableViewCell
+        self.setupCellEvents { (events) in
+            cell.events = events
+        }
         cell.feed = TempDataManager.shared.items[indexPath.row]
         return cell
     }

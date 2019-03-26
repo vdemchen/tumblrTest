@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GillSansNova.ttf">
+            <string>GillSansNova</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopupView" customModule="DzingRelease" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyJ-eZ-JpC">
+                    <rect key="frame" x="20" y="16" width="293" height="75"/>
+                    <fontDescription key="fontDescription" name="GillSansNova" family="Gill Sans Nova" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkP-gr-tJm">
+                    <rect key="frame" x="327" y="40.5" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="Hj1-13-ztR"/>
+                        <constraint firstAttribute="width" constant="26" id="LUw-IO-v9M"/>
+                    </constraints>
+                    <state key="normal" image="closeIcon"/>
+                    <connections>
+                        <action selector="pressedCloseButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="QWV-2O-JnW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PyJ-eZ-JpC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="3Gf-QC-CRE"/>
+                <constraint firstItem="PyJ-eZ-JpC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="9LJ-md-acq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wkP-gr-tJm" secondAttribute="trailing" constant="22" id="BF9-YD-UPj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PyJ-eZ-JpC" secondAttribute="bottom" constant="16" id="Ko2-zB-Yue"/>
+                <constraint firstItem="wkP-gr-tJm" firstAttribute="centerY" secondItem="PyJ-eZ-JpC" secondAttribute="centerY" id="Ysv-L0-NbX"/>
+                <constraint firstItem="wkP-gr-tJm" firstAttribute="leading" secondItem="PyJ-eZ-JpC" secondAttribute="trailing" constant="14" id="lRd-Si-fy8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="infoLabel" destination="PyJ-eZ-JpC" id="EcJ-15-t7f"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="300"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeIcon" width="15" height="14"/>
+    </resources>
+</document>
