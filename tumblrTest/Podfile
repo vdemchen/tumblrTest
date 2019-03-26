@@ -7,6 +7,9 @@ target 'tumblrTest' do
 
   # Pods for tumblrTest
 
-pod 'Alamofire'
+	pod 'Alamofire'
+	pod 'SwiftEntryKit'
+	pod 'Kingfisher'
+	pod 'SnapKit'
 
 end
