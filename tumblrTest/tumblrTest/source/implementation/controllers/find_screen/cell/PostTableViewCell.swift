@@ -9,7 +9,6 @@ class PostTableViewCell: BaseTableViewCell {
 
     //MARK: - Views
     
-    @IBOutlet private weak var iconImage: UIImageView!
     @IBOutlet private weak var authorLabel: UILabel!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var readMoreButton: UIButton!
@@ -21,7 +20,6 @@ class PostTableViewCell: BaseTableViewCell {
     //MARK: - Private properties
     
     private let worker = FindWorker()
-    private let imageService = ImageService()
     
     //MARK: - Public properties
     
@@ -47,13 +45,12 @@ class PostTableViewCell: BaseTableViewCell {
         self.authorLabel.text = feed.blogName
         self.titleLabel.text = feed.blog.title
         self.descriptionLabel.text = feed.blog.description.removeHTMLTag()
-        self.contentImage.kf.setImage(with: self.imageService.loadImageFromServer(
-            url: feed.photos?.first?.altSizes.first?.url ?? "",
+        self.contentImage.kf.setImage(with: ImageService.loadImageFromServer(
+            url: feed.photo?.url ?? "",
             id: String(feed.id)
         ))
-        
         if feed.type == TypeEnum.photo,
-            let size: Size = feed.photos?.first?.altSizes.first {
+            let size: Size = feed.photo  {
             self.setupImageHeight(size: size)
         } else {
             self.anotherContent(feedType: feed.type)

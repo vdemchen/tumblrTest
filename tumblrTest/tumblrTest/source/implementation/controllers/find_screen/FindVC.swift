@@ -72,7 +72,7 @@ class FindVC: UIViewController {
         let events: CellEvents = CellEvents { [weak self] (feed) in
             guard let strongSelf = self else { return }
             let vc = InfoVC()
-            
+            vc.setupData = feed
             strongSelf.navigationController?.pushViewController(vc, animated: true)
         }
         completion(events)
@@ -90,6 +90,7 @@ extension FindVC: UISearchBarDelegate {
                 PopupView().showNotificationMessage(title: "Nothing find!", colorView: UIColor.red)
             }
             self.tableView.reloadData()
+            self.searchController.isActive = false
         }
     }
 }

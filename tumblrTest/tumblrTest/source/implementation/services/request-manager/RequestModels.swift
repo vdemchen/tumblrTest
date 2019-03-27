@@ -39,12 +39,12 @@ enum Format: String, Codable {
 struct Photo: Codable {
     let caption: String
     let originalSize: Size
-    let altSizes: [Size]
+//    let altSizes: [Size]
     
     enum CodingKeys: String, CodingKey {
         case caption
         case originalSize = "original_size"
-        case altSizes = "alt_sizes"
+//        case altSizes = "alt_sizes"
     }
 }
 
