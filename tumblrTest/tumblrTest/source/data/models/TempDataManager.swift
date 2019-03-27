@@ -13,9 +13,8 @@ class TempDataManager {
                 blogName: item.blogName,
                 blog: item.blog,
                 id: item.id,
-                photos: item.photos
+                photo: item.photos?.first?.originalSize
             )
-            print(newItem)
             self.shared.items.append(newItem)
         }
     }
@@ -30,20 +29,20 @@ struct ItemModel {
     let blogName: String
     let blog: ResponseBlog
     let id: Int
-    let photos: [Photo]?
+    let photo: Size?
     
     init(
         type: TypeEnum,
         blogName: String,
         blog: ResponseBlog,
         id: Int,
-        photos: [Photo]?
+        photo: Size?
         ) {
         self.type = type
         self.blogName = blogName
         self.blog = blog
         self.id = id
-        self.photos = photos
+        self.photo = photo
     }
 
 }
